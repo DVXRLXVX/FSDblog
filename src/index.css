@@ -1,0 +1,38 @@
+/* Global reset & base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F4F2FA;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(103, 58, 183, 0.3);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(103, 58, 183, 0.5);
+}
+
+/* Selection color */
+::selection {
+  background: rgba(103, 58, 183, 0.2);
+  color: #1a1a2e;
+}
